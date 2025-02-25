@@ -10,6 +10,10 @@ int findLargest(int nums[], int n){
     return *max_element(nums, nums + n);
 }
 
+int findSmallest(int nums[], int n){
+    return *min_element(nums, nums + n);
+}
+
 int main(){
 
     // Array Initialization 
@@ -23,8 +27,12 @@ int main(){
         cout << nums[i] << " ";
         // Prints the largest element of the array 
         cout << "\n The largest element in the array is:" << findLargest(nums, n);
+
+        for(int i = 0; i < n; i++)
+        cout << nums[i] << " ";
+        cout << "\n The smallest element in the array is:" << findSmallest(nums, n);
     
-    // terminates program after succesful run
+    // terminates program after succesful run.
     return 0;
 
 }
