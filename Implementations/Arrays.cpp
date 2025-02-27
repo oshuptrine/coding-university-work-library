@@ -40,7 +40,11 @@ int main(){
 
     std::vector<int> numbers;
     getUserInput(numbers);
-    std::cout << "You entered: " << numbers.back() << std::endl;
+    //std::cout << "You entered: " << numbers.back() << std::endl;
+
+    for (int i = 0; i < numbers.size(); i++)
+    cout << numbers[i] << " ";
+
 
     //Array Practice Code for Smallest and Largest Element Below
     // cout << "Original Array:";
