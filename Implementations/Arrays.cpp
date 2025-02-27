@@ -18,9 +18,14 @@ int findSmallest(int nums[], int n){
 
 void getUserInput(std::vector<int>& nums) {
     int input;
-    std::cout << "Enter an integer: ";
-    std::cin >> input;
-    nums.push_back(input);
+    //Get 4 integers from user
+    for(int i = 0; i < 4; i++)
+    {
+        std::cout << "Enter a integer: ";
+        std::cin >> input;
+        nums.push_back(input);
+    }
+   
 }
 
 
